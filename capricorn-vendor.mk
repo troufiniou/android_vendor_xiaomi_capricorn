@@ -41,6 +41,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/capricorn/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/xiaomi/capricorn/proprietary/bin/pm-service:system/bin/pm-service \
     vendor/xiaomi/capricorn/proprietary/bin/port-bridge:system/bin/port-bridge \
+    vendor/xiaomi/capricorn/proprietary/bin/qfp-daemon:system/bin/qfp-daemon \
     vendor/xiaomi/capricorn/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/xiaomi/capricorn/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/xiaomi/capricorn/proprietary/bin/qvop-daemon:system/bin/qvop-daemon \
@@ -98,6 +99,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/capricorn/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/xiaomi/capricorn/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/xiaomi/capricorn/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
+    vendor/xiaomi/capricorn/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    vendor/xiaomi/capricorn/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    vendor/xiaomi/capricorn/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    vendor/xiaomi/capricorn/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    vendor/xiaomi/capricorn/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    vendor/xiaomi/capricorn/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
+    vendor/xiaomi/capricorn/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
+    vendor/xiaomi/capricorn/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
+    vendor/xiaomi/capricorn/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/a530_gpmu.fw2:system/etc/firmware/a530_gpmu.fw2 \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/a530_pfp.fw:system/etc/firmware/a530_pfp.fw \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/a530_pm4.fw:system/etc/firmware/a530_pm4.fw \
@@ -120,6 +130,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/xiaomi/capricorn/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    vendor/xiaomi/capricorn/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/nvm_tlv_2.1.bin:system/etc/firmware/nvm_tlv_2.1.bin \
@@ -154,6 +166,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/capricorn/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/xiaomi/capricorn/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/xiaomi/capricorn/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
+    vendor/xiaomi/capricorn/proprietary/lib/hw/audio.primary.msm8996.so:system/lib/hw/audio.primary.msm8996.so \
     vendor/xiaomi/capricorn/proprietary/lib/hw/camera.msm8996.so:system/lib/hw/camera.msm8996.so \
     vendor/xiaomi/capricorn/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/xiaomi/capricorn/proprietary/lib/libRecoFace.so:system/lib/libRecoFace.so \
@@ -177,12 +190,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/capricorn/proprietary/lib/modules/mmc_block_test.ko:system/lib/modules/mmc_block_test.ko \
     vendor/xiaomi/capricorn/proprietary/lib/modules/mmc_test.ko:system/lib/modules/mmc_test.ko \
     vendor/xiaomi/capricorn/proprietary/lib/modules/qca_cld/qca_cld_wlan.ko:system/lib/modules/qca_cld/qca_cld_wlan.ko \
+    vendor/xiaomi/capricorn/proprietary/lib/modules/qca_cld/qca_cld_wlan.ko:system/lib/modules/wlan.ko \
     vendor/xiaomi/capricorn/proprietary/lib/modules/rdbg.ko:system/lib/modules/rdbg.ko \
     vendor/xiaomi/capricorn/proprietary/lib/modules/spidev.ko:system/lib/modules/spidev.ko \
     vendor/xiaomi/capricorn/proprietary/lib/modules/test-iosched.ko:system/lib/modules/test-iosched.ko \
     vendor/xiaomi/capricorn/proprietary/lib/modules/ufs_test.ko:system/lib/modules/ufs_test.ko \
     vendor/xiaomi/capricorn/proprietary/lib/modules/wil6210.ko:system/lib/modules/wil6210.ko \
     vendor/xiaomi/capricorn/proprietary/lib/soundfx/libdirac.so:system/lib/soundfx/libdirac.so \
+    vendor/xiaomi/capricorn/proprietary/lib64/hw/audio.primary.msm8996.so:system/lib64/hw/audio.primary.msm8996.so \
     vendor/xiaomi/capricorn/proprietary/lib64/libOmxVpp.so:system/lib64/libOmxVpp.so \
     vendor/xiaomi/capricorn/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
     vendor/xiaomi/capricorn/proprietary/lib64/libqti-iop.so:system/lib64/libqti-iop.so \
