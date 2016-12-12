@@ -143,6 +143,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
     vendor/xiaomi/capricorn/proprietary/etc/firmware/tfa9891.cnt:system/etc/firmware/tfa9891.cnt \
+    vendor/xiaomi/capricorn/proprietary/etc/init.captouch.sh:system/etc/init.captouch.sh \
     vendor/xiaomi/capricorn/proprietary/etc/modem/Diag.cfg:system/etc/modem/Diag.cfg \
     vendor/xiaomi/capricorn/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/xiaomi/capricorn/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
@@ -1831,6 +1832,7 @@ PRODUCT_PACKAGES += \
     libsdm-disp-apis \
     libthermalclient \
     libtime_genoff \
+    QFingerprintService \
     QtiTelephonyService \
     TimeService \
     datastatusnotification \
